@@ -1,0 +1,53 @@
+
+body   {
+      font-family: "Poiret One", sans-serif;
+font-family: "Spirax", sans-serif;
+margin: 0;
+}
+
+header  {
+    display: block;
+    background-color: #381f26;
+  display: flex;
+  justify-content: center;
+    opacity: 0.8;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li {
+    font-size: 50px;
+    margin: 0 20px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.hot-section {
+     background-image: url("hot.jpg");
+     background-repeat: no-repeat;
+      background-size: cover;
+
+}
+
+.juicy-section{
+background-image: url("juicy.jpg");
+     background-repeat: no-repeat;
+      background-size: cover;
+}   
+
+.cozy-section{
+    background-image: url("cozy.jpg");
+     background-repeat: no-repeat;
+      background-size: cover;
+}
