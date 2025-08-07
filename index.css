@@ -1,8 +1,10 @@
 
 body   {
-      font-family: "Poiret One", sans-serif;
+
 font-family: "Spirax", sans-serif;
 margin: 0;
+padding:0;
+background-color: darkred;
 }
 
 header  {
@@ -11,6 +13,21 @@ header  {
   display: flex;
   justify-content: center;
     opacity: 0.8;
+}
+
+section {
+    height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+
 }
 
 ul {
@@ -35,19 +52,52 @@ li a {
 
 .hot-section {
      background-image: url("hot.jpg");
-     background-repeat: no-repeat;
-      background-size: cover;
-
 }
 
 .juicy-section{
 background-image: url("juicy.jpg");
-     background-repeat: no-repeat;
-      background-size: cover;
 }   
 
-.cozy-section{
-    background-image: url("cozy.jpg");
-     background-repeat: no-repeat;
-      background-size: cover;
+.cosy-section{
+    background-image: url("cosy.jpg");
+}
+
+h1{
+  color: darkred;
+  font-size: 150px;
+    margin-bottom: 0;
+}
+
+.red-box {
+  background-color: rgba(139, 0, 0, 0.8); /* mörkröd med lite transparens */
+  color: white;
+   padding: 2px 80px;
+  margin: 20px 0;
+  display: inline-block;   /* så den blir så stor som texten kräver */
+  max-width: 90%;
+  font-family: "Poiret One", sans-serif;
+  font-size: 40px;
+}
+
+.left-box {
+  margin-left: 30%;
+}
+
+.right-box {
+   margin-right: 15%;
+}
+
+.menu {
+  width: 100%;
+  max-width: 400px;
+  border-collapse: collapse;
+  color: white;
+ font-family: "Poiret One", sans-serif;
+  font-size: 1.5rem;
+  background-color: rgb(53, 50, 50, 0.8);
+}
+
+.menu .price {
+  text-align: right;
+  width: 100px;
 }
