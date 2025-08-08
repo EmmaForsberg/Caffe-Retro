@@ -8,11 +8,23 @@ background-color: darkred;
 }
 
 header  {
-    display: block;
+    display: flex;
     background-color: #381f26;
-  display: flex;
+padding: 1rem;
+width:100%;
+gap: 4rem;
   justify-content: center;
     opacity: 0.8;
+      top: 0;
+   z-index: 1;
+   position: sticky;
+}
+
+.header .link {
+  color: white;
+      font-size: 50px;
+text-decoration: none;
+
 }
 
 section {
@@ -30,25 +42,6 @@ section {
 
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-li {
-    font-size: 50px;
-    margin: 0 20px;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
 
 .hot-section {
      background-image: url("hot.jpg");
@@ -88,16 +81,37 @@ h1{
 }
 
 .menu {
-  width: 100%;
-  max-width: 400px;
-  border-collapse: collapse;
-  color: white;
- font-family: "Poiret One", sans-serif;
+ 
+  background-color: rgba(53, 50, 50, 0.8);
+  padding-inline: 4rem;
+  font-family: "Poiret One", sans-serif;
   font-size: 1.5rem;
-  background-color: rgb(53, 50, 50, 0.8);
+  color: white;
 }
 
-.menu .price {
-  text-align: right;
-  width: 100px;
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .red-box {
+    position: static;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header {
+    gap: 2rem;
+  }
+
+  .red-box,
+  .menu {
+    padding-inline: 1rem;
+  }
+
+  .section {
+    padding-inline: 2rem;
+  }
 }
